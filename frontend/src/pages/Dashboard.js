@@ -15,7 +15,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchHoldings = async () => {
       try {
-        const res = await fetch("https://zerodha-trading-clone-1.onrender.com/allHoldings", {
+        const res = await fetch("https://zerodha-trading-app-clone.onrender.com/allHoldings", {
           headers: { Authorization: token }
         });
 

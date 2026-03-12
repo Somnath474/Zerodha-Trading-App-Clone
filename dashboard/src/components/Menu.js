@@ -29,7 +29,7 @@ const Menu = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    window.location.replace("http://localhost:3000/login");
+    window.location.replace("https://zerodha-trading-app-clone-7uex.vercel.app/login");
   };
 
   const navLinks = [

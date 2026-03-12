@@ -16,7 +16,7 @@ const SellActionWindow = ({ uid }) => {
         return;
       }
 
-      const res = await fetch("http://localhost:3002/newOrder", {
+      const res = await fetch("https://zerodha-trading-app-clone.onrender.com/newOrder", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -28,7 +28,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("token");
 
     if (!token) {
-      window.location.href = "http://localhost:3000/login";
+      window.location.href = "https://zerodha-trading-app-clone-7uex.vercel.app/login";
       return;
     }
 

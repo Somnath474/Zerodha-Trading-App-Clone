@@ -6,7 +6,7 @@ const Positions = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token"); // ✅ token from login
-    axios.get("http://localhost:3002/allPositions", {
+    axios.get("https://zerodha-trading-app-clone.onrender.com/allPositions", {
       headers: { Authorization: `Bearer ${token}` } // ✅ send token
     })
     .then((res) => setPositions(res.data))
