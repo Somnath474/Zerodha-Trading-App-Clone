@@ -54,10 +54,10 @@ const Signup = () => {
           <p>Start your trading journey today</p>
         </div>
         <ul className="brand-features">
-          <li>✅ Zero brokerage on equity delivery</li>
-          <li>✅ Flat ₹20 per order on F&O</li>
-          <li>✅ Free direct mutual fund investments</li>
-          <li>✅ Advanced charting & analytics</li>
+          <li>Zero brokerage on equity delivery</li>
+          <li>Flat ₹20 per order on F&O</li>
+          <li>Free direct mutual fund investments</li>
+          <li>Advanced charting & analytics</li>
         </ul>
       </div>
 
