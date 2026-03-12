@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ FIX: Allow both frontend ports (login app + dashboard app)
 app.use(cors({
-  origin: ["https://zerodha-trading-app-clone-7uex.vercel.app", "https://zerodha-trading-app-clone-pnst.vercel.app/"],
+  origin: ["https://zerodha-trading-app-clone-7uex.vercel.app", "https://zerodha-trading-app-clone-pnst.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
@@ -68,7 +68,7 @@ app.get("/allPositions", authenticateToken, async (req, res) => {
 });
 
 // ---------------- NEW ORDER ----------------
-app.post("https://zerodha-trading-app-clone.onrender.com/newOrder", authenticateToken, async (req, res) => {
+app.post("/newOrder", authenticateToken, async (req, res) => {
   try {
 
     const { name, qty, price, mode } = req.body;
