@@ -68,7 +68,7 @@ app.get("/allPositions", authenticateToken, async (req, res) => {
 });
 
 // ---------------- NEW ORDER ----------------
-app.post("/newOrder", authenticateToken, async (req, res) => {
+app.post("https://zerodha-trading-app-clone.onrender.com/newOrder", authenticateToken, async (req, res) => {
   try {
 
     const { name, qty, price, mode } = req.body;
