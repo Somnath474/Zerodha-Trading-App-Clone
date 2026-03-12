@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ FIX: Allow both frontend ports (login app + dashboard app)
 app.use(cors({
-  origin: ["https://zerodha-trading-app-clone-7uex.vercel.app", "https://zerodha-trading-app-clone-pnst.vercel.app"],
+  origin: ["https://zerodha-trading-app-clone-7uex.vercel.app", "https://zerodha-trading-app-clone-x51l.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));

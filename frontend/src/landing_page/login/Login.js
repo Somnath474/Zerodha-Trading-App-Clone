@@ -25,7 +25,7 @@ const Login = () => {
 
       if (res.ok) {
         // ✅ Pass token via URL to dashboard (cross-port localStorage fix)
-        window.location.href = `https://zerodha-trading-app-clone-pnst.vercel.app?token=${data.token}`;
+        window.location.href = `https://zerodha-trading-app-clone-x51l.vercel.app?token=${data.token}`;
       } else {
         setError(data.msg || "Login failed. Please try again.");
       }
